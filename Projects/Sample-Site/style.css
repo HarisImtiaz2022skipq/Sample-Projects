@@ -1,94 +1,188 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    line-height: 1.8em;
-/* font-family: 'Open Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8em;
+  /* font-family: 'Open Sans', sans-serif; */
 }
-body,html{
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
-.fsection{
-    background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.fsection {
+  background-image: url(images/pexels-felix-mittermeier-956999.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
-a{
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    margin: 15px;
-    text-align: center;
-    transition: 1s ease-in;
+a {
+  padding: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+  transition: 0.15s ease-in;
+  position: relative;
 }
-a:hover{
-    /* padding: 20px; */
-     border: 1px solid white; 
-    /* transition: 0.4s ease-in-out; */
-    transform: scale(1.2);
-    transition: 0.5s ease-out;
-
+ul li {
+  display: inline-block;
+  margin-top: 15px;
 }
-.main{
-    position: absolute;
-    top: 50%;
+a::before {
+  content: "";
+  position: absolute;
+  background: #fdffae;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease;
+}
+nav a:hover:before {
+  width: 60%;
+  transform: translateX(50%);
+}
+.main {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.spn {
+  color: white;
+  font-size: 48px;
+  padding: 10px 30px;
+  transition: 1s ease-out;
+}
+.spn:hover {
+  transition: 0.5s ease-in;
+  font-size: 60px;
+}
+.servicesection {
+  background-image: url(images/pexels-felix-mittermeier-956999.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.sdiv {
+  position: absolute;
+  top: 30%;
+  /* margin-top: 20px; */
+  padding: 60px 100px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  transition: 1s ease-in;
+}
+.aboutsection {
+  background-image: url(images/pexels-felix-mittermeier-956999.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.adiv {
+  position: absolute;
+  top: 30%;
+  /* margin-top: 20px; */
+  padding: 60px 100px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  transition: 1.5s ease-in;
+}
+i,
+h1 {
+  color: white;
+}
+h1 {
+  color: #fdffae;
+  margin-top: 15px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  font-size: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+h1:hover {
+  color: white;
+  transition: color 1s;
+}
+.chkbtn {
+  font-size: 25px;
+  margin: 20px;
+  display: none;
+  float: right;
+}
+.check {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .sdiv {
+    top: 10%;
+    font-size: 19px;
+    padding: 0 15px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  a {
+    font-size: 19px;
+  }
+  .adiv {
+    top: 10%;
+    font-size: 19px;
+    padding: 0 15px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  ul {
     width: 100%;
     text-align: center;
-}
-.spn{
-    color: white;
-    font-size: 48px;
-    padding: 10px 30px;
-    transition: 1s ease-out;
-   
-}
-.spn:hover{
-    transition: 0.5s ease-in;
-    font-size: 60px;
-}
-.servicesection{
-    background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.sdiv{
-    position: absolute;
-    top: 30%;
-    /* margin-top: 20px; */
-    padding: 60px 100px;
-    text-align: center;
-    color: white;
-    font-size: 22px;
-    transition: 1.5s ease-in;
-}
-.aboutsection{
-    background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.adiv{
-    position: absolute;
-    top: 30%;
-    /* margin-top: 20px; */
-    padding: 60px 100px;
-    text-align: center;
-    color: white;
-    font-size: 22px;
-    transition: 1.5s ease-in;
+    position: fixed;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 25px;
+  }
+  a:hover,
+  a.active {
+    opacity: 0.5;
+    color: #fdffae;
+    font-weight: bold;
+  }
+  .chkbtn {
+    display: block;
+    font-size: 30px;
+  }
+  .check:checked ~ ul {
+    left: 0;
+  }
+  .sdiv {
+    margin-top: 50%;
+  }
+  .adiv {
+    margin-top: 50%;
+  }
 }
