@@ -1,1 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8em;
+}
+.firstsection,
+.secondsection,
+.thirdsection {
+  min-height: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.firstsection {
+  background-image: url(images/image1.png);
+}
+.textcontainer {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.spn {
+  background-color: #313534;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-weight: 300;
+  border-radius: 5px;
+}
+.spn:hover {
+  background: transparent;
+  transition: 0.5s ease-in-out;
+  font-size: 60px;
+  color: black;
+}
+.fsection {
+  text-align: center;
+  padding: 50px 80px;
+  background: #f4f4f4;
+  color: #666;
+}
+.fsection h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.fsection p {
+  margin-top: 15px;
+  letter-spacing: 0.7px;
+}
+.secondsection {
+  background-image: url(images/image2.png);
+  min-height: 400px;
+}
+.secondsection2 {
+  text-align: center;
+  padding: 50px 80px;
+  background-color: #313534;
+  color: white;
+}
+.secondsection2 h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.secondsection2 p {
+  letter-spacing: 0.7px;
+}
+.thirdsection {
+  background-image: url(images/image3.png);
+  min-height: 400px;
+}
+.thirdsection2 {
+  text-align: center;
+  padding: 50px 80px;
+  background-color: #313534;
+  color: white;
+}
+.thirdsection2 h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.thirdsection2 p {
+  letter-spacing: 0.7px;
+}
+@media screen and (max-width: 500px) {
+  .textcontainer .spn {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 326px) {
+  .textcontainer .spn {
+    font-size: 13px;
+  }
+}
 
