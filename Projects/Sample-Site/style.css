@@ -8,12 +8,12 @@
 }
 body,
 html {
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 .fsection {
   background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-  min-height: 100vh;
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ nav a:hover:before {
 }
 .servicesection {
   background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-  min-height: 100vh;
+  min-height: 170vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +90,7 @@ nav a:hover:before {
 }
 .aboutsection {
   background-image: url(images/pexels-felix-mittermeier-956999.jpg);
-  min-height: 100vh;
+  min-height: 170vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,8 +154,8 @@ h1:hover {
   ul {
     width: 100%;
     text-align: center;
-    position: fixed;
-    height: 100vh;
+    position: absolute;
+    height: 32vh;
     top: 80px;
     left: -100%;
     transition: all 0.5s;
@@ -184,5 +184,12 @@ h1:hover {
   }
   .adiv {
     margin-top: 50%;
+  }
+}
+@media screen and (max-width: 362px) {
+  .adiv,
+  s.sdiv {
+    font-size: 15px;
+    line-height: 1em;
   }
 }
