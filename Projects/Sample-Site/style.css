@@ -190,10 +190,14 @@ h1:hover {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 378px) {
   .adiv,
   s.sdiv {
     font-size: 15px;
     line-height: 1em;
   }
+  .spn {
+    font-size: 30px;
+  }
+}
 }
